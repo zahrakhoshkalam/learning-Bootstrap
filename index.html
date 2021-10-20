@@ -57,7 +57,9 @@
                 inventore iusto cumque magnam. Ex, sint? Minima, praesentium
                 accusamus natus deserunt fugiat maiores. Ratione?
               </p>
-              <button class="btn btn-primary btn-lg">
+              <button class="btn btn-primary btn-lg" 
+              data-bs-toggle="modal"
+               data-bs-target="#enroll">
                 Start The Enrollment
               </button>
             </div>
@@ -452,6 +454,52 @@ position-relative">
   </a>
   </div>
 </footer>
+<div class="modal fade" id="enroll" tabindex="-1" role="dialog"
+ aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Enrollment Form</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="lead">Fill out this form and we will get back to you</p>
+      <form action="">
+        <div class="mb-3">
+          <lable for="first-name" class="col-form-lable text-capitalize">
+              first name:
+          </lable>
+          <input type="text" class="form-control" id="first-name">
+        </div>
+        <div class="mb-3">
+          <lable for="last-name" class="col-form-lable text-capitalize">
+              Last name:
+          </lable>
+          <input type="text" class="form-control" id="last-name">
+        </div>
+        <div class="mb-3">
+          <lable for="email" class="col-form-lable text-capitalize">
+              email:
+          </lable>
+          <input type="email" class="form-control" id="email">
+        </div>
+        <div class="mb-3">
+          <lable for="phone" class="col-form-lable text-capitalize">
+              phone:
+          </lable>
+          <input type="text" class="form-control" id="first-name">
+        </div>
+      </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
